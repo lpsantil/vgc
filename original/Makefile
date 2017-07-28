@@ -112,7 +112,7 @@ t/%.exe: t/%.o $(LIB) Makefile
 #	$(LD) -L$(LDIR) -l$(LNK) $(LDFLAGS) $< -o $@
 	$(LD) $(LDFLAGS) $< -o $@
 
-all:
+all: test
 
 $(LIB): $(LOBJ)
 	$(AR) -rcs $@ $^
