@@ -19,7 +19,7 @@ A small, minimal automatic memory management system (Garbage Collector).  Curren
 * `# yum install kernel-headers glibc-static gcc g++ binutils git make`
 
 ## Building
-Try:
+In the original forlder, try:
 * `make test`
 * `make runtest`
 * `make install`
