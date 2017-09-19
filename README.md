@@ -2,12 +2,12 @@
 A minimal Garbage Collector for ANSI-C, C99, C11
 
 ## Vulture Garbage Collector
-A small, minimal automatic memory management system (Garbage Collector).  Currently, it is a simple [Reference Counting][0] implementation based a [blog post][1] by Skeeto/Chris Wells and it is contained in a single header file.  It can be used in ANSI C, C99, C11.  In C99 and C11, it defaults to a thread-safe implementation.  My eventual plans are to
+A small, minimal automatic memory management system (Garbage Collector).  Currently, it is a simple [Reference Counting][0] implementation based a [blog post][1] by [Skeeto/Chris Wellons][00] and it is contained in a single header file.  It can be used in ANSI C, C99, C11.  In C99 and C11, it defaults to a thread-safe implementation.  My eventual plans are to
 * Add benchmarking tests
 * Make it more generic
 * Make it so it compiles on less ANSI compatible compilers and 16-bit DOS compilers ([Dunfield Micro-C/PC][2], [Borland C/C++][3], [Borland TurboC/C++][4], [OpenWatcom 1.9][5]/[V2][6])
 * Optimize it for better cache locality
-* Optimize it's memory use (currently 2 pointers per Object, 8 bytes (32-bit) or 16-bits (64-bit)
+* Optimize it's memory use (currently 2 pointers per Object, 8 bytes (32-bit) or 16 bytes (64-bit)
 * Make mark, sweep, scavenge automagical with [RAII/cleanup vars][7]/[auto-destructors][8]
 * Optimize with [MRU Cache Replacement Policies][9] in mind
 * Optimize with [Memory Pools][11]/[Object Pools][12]/[Memory Arena Allocators][13] in mind
@@ -42,6 +42,7 @@ In the `$VGC/original` forlder, try:
 * [MRU Cache Replacement Policy][9]
 * [Cache Simulator written in HTML/JS][11]
 
+[00]: https://github.com/skeeto?tab=repositories
 [0]: https://en.wikipedia.org/wiki/Reference_counting
 [1]: http://nullprogram.com/blog/2015/02/17/
 [2]: http://www.classiccmp.org/dunfield/dos/index.htm
